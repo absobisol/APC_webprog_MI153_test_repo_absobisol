@@ -11,19 +11,25 @@
 body{
 text-align: center;
 color:black;
-font-family: verdana;
-    font-size: 200%;
+font-family: simplifica;
+    font-size: 400%;
 	background-image: url("1.jpg");
     background-color: #cccccc;
 }
 th, td {
-    font-family: verdana;
+    font-family: simplifica;
 	
 }
 
 h1 {
-font-size: 100%;
+font-size: 80%;
 text-decoration: underline;
+text-align:left;
+
+}
+
+h2 {
+font-size: 80%;
 
 
 }
@@ -50,14 +56,15 @@ a:active {
 }
 table {
 font-family: verdana;
-font-size: 30px;
+font-size: 50px;
+
 }
 button {
     background-color: white;
     color: black;
     border-size: 43px;
 	border-color: blue;
-	font-family: verdana;
+	font-family: simplifica;
 	font-size: 32px;
 }
 
@@ -69,16 +76,13 @@ color: green;
 audio{
 display: none;
 }
-
-
-
-
 </style>
+
 <body>
 AMIEL POCHOLO B. SOBISOL</br>
     <img src="Cholo.jpg" width="300" height="300">
 
-<table> 
+<table align="center"> 
 <tr> 
 <th>NICKNAME:</th>
 <td>CHOLO</td> 
@@ -98,19 +102,16 @@ AMIEL POCHOLO B. SOBISOL</br>
 <td>MUSIC and PHOTOGRAPHY</td>
 </tr>
 </table>
-<h1>TRIVIA ABOUT ME!</h1>
-
-<h1 id="Q1">WHAT IS MY TWO FAVORITE SPORTS?</h1>
-
-<button type="button" onclick="document.getElementById('Q1').innerHTML = 'BASKETBALL AND BOXING'">View My Sports!</button>
-<h1 id="Q2">MY BEST TRAIT?</h1>
-<button type="button" onclick="document.getElementById('Q2').innerHTML = 'OPTIMIST'">I AM......</button>
-<h1 id="Q3">FAVORITE FOOD</h1>
-<button type="button" onclick="document.getElementById('Q3').innerHTML = 'CHICKEN'">THIS IS DELICIOUS!</button>
-<h1 id="Q4">PEOPLE I HATE?</h1>
-<button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">I HATE.....</button>
-<h1 id="Q5">MOTTO IN LIFE?</h1>
-<button type="button" onclick="document.getElementById('Q5').innerHTML = 'TRUST NO ONE BUT YOURSELF'">Click To Know!</button>
+<h>TRIVIA ABOUT ME!</h>
+<h1 id="Q1">WHAT IS MY TWO FAVORITE SPORTS?</br><button type="button" onclick="document.getElementById('Q1').innerHTML = 'BASKETBALL AND BOXING'">View My Sports!</button></h1>
+<h1 id="Q2">MY BEST TRAIT?</br>
+<button type="button" onclick="document.getElementById('Q2').innerHTML = 'OPTIMIST'">I AM......</button></h1>
+<h1 id="Q3">FAVORITE FOOD</br>
+<button type="button" onclick="document.getElementById('Q3').innerHTML = 'CHICKEN'">THIS IS DELICIOUS!</button></h1>
+<h1 id="Q4">PEOPLE I HATE?</br>
+<button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">I HATE.....</button></h1>
+<h1 id="Q5">MOTTO IN LIFE?</br>
+<button type="button" onclick="document.getElementById('Q5').innerHTML = 'TRUST NO ONE BUT YOURSELF'">Click To Know!</button></h1>
 <?php
 // define variables and set to empty values
 $nameErr = $nicknameErr = $emailErr = $homeErr = $cellErr = $commentErr = $genderErr = "";
@@ -122,7 +123,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $name = test_input($_POST["name"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9a-zA-Z]+$/;",$name)) {
+    if (!preg_match("/^[0-9a-zA-Z]+$/",$name)) {
       $nameErr = "Only letters and Numbers"; 
     }
   }
@@ -131,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $nickname = test_input($_POST["nickname"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("[a-zA-Z ]",$nickname)) {
+    if (!preg_match("/^[0-9a-zA-Z]+$/",$nickname)) {
       $nicknameErr = "Letters Only!"; 
     }
   }
@@ -150,7 +151,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   } else {
     $home = test_input($_POST["home"]);
     // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9a-zA-Z]+$/;",$home)) {
+    if (!preg_match("/^[0-9a-zA-Z]+$/",$home)) {
       $homeErr = "Only letters and Numbers"; 
     }
   }
