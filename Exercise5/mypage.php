@@ -78,8 +78,7 @@ display: none;
 }
 </style>
 
-<body>
-AMIEL POCHOLO B. SOBISOL</br>
+<body> AMIEL POCHOLO B. SOBISOL</br>
     <img src="Cholo.jpg" width="300" height="300">
 
 <table align="center"> 
@@ -112,124 +111,67 @@ AMIEL POCHOLO B. SOBISOL</br>
 <button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">I HATE.....</button></h1>
 <h1 id="Q5">MOTTO IN LIFE?</br>
 <button type="button" onclick="document.getElementById('Q5').innerHTML = 'TRUST NO ONE BUT YOURSELF'">Click To Know!</button></h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
-// define variables and set to empty values
-$nameErr = $nicknameErr = $emailErr = $homeErr = $cellErr = $commentErr = $genderErr = "";
-$name = $nickname = $email = $home = $cell = $comment = $gender = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  if (empty($_POST["name"])) {
-    $nameErr = "Name is required";
-  } else {
-    $name = test_input($_POST["name"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9a-zA-Z]+$/",$name)) {
-      $nameErr = "Only letters and Numbers"; 
-    }
-  }
-  if (empty($_POST["nickname"])) {
-    $nicknameErr = "Nickname is required";
-  } else {
-    $nickname = test_input($_POST["nickname"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9a-zA-Z]+$/",$nickname)) {
-      $nicknameErr = "Letters Only!"; 
-    }
-  }
-  
-  if (empty($_POST["email"])) {
-    $emailErr = "Email is required";
-  } else {
-    $email = test_input($_POST["email"]);
-    // check if e-mail address is well-formed
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-      $emailErr = "Invalid email format"; 
-    }
-  }
-   if (empty($_POST["home"])) {
-    $homeErr = "Home Address is required";
-  } else {
-    $home = test_input($_POST["home"]);
-    // check if name only contains letters and whitespace
-    if (!preg_match("/^[0-9a-zA-Z]+$/",$home)) {
-      $homeErr = "Only letters and Numbers"; 
-    }
-  }
-   if (empty($_POST["gender"])) {
-    $genderErr = "Gender is required";
-  } else {
-    $gender = test_input($_POST["gender"]);
-  }
-}
-   if (empty($_POST["cell"])) {
-    $cellErr = "";
-  } else {
-    $cell = test_input($_POST["cell"]);
-    if (!preg_match("[0-9 ]",$cell)) {
-      $cellErr = "Only Numbers are allowed!"; 
-    }
-  }
-
-  if (empty($_POST["comment"])) {
-    $comment = "";
-  } else {
-    $comment = test_input($_POST["comment"]);
-  }
-
+include_once 'dbconfig.php';
+if(isset($_POST['btn-save']))
+{
+ // variables for input data
+ $first_name = $_POST['first_name'];
+ $last_name = $_POST['last_name'];
+ $city_name = $_POST['city_name'];
+ // variables for input data
  
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
+ // sql query for inserting data into database
+ 
+        $sql_query = "INSERT INTO users(first_name,last_name,user_city) VALUES('$first_name','$last_name','$city_name')";
+ mysqli_query($con,$sql_query);
+        
+        // sql query for inserting data into database
+ 
 }
 ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<center>
 
-<h2>Join me! Register below.</h2>
-<form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
- Complete Name: <input type="text" name="name" value="<?php echo $name;?>">
-  <span class="error">* <?php echo $nameErr;?></span>
-  <br><br>
- Nickname: <input type="text" name="nickname" value="<?php echo $nickname;?>">
-  <span class="error">* <?php echo $nicknameErr;?></span>
-  <br><br>
- E-mail:  <input type="text" name="email" value="<?php echo $email;?>">
-  <span class="error">* <?php echo $emailErr;?></span>
-  <br><br>
- Home Address:  <input type="text" name="home" value="<?php echo $home;?>">
-  <span class="error">*<?php echo $homeErr;?></span>
-  <br><br>
- Gender:
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="Female">Female
-  <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="Male">Male
-  <span class="error">*<?php echo $genderErr;?></span>
-  <br><br>
- Cell-Phone Number:  <input type="text" name="cell" value="<?php echo $cell;?>">
-  <span class="error">*<?php echo $cellErr;?></span>
-  <br><br>
-  Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
-  <br><br>
-  <p><span class="error">* required field.</span></p>
-  
-  <input type="submit" name="submit" value="Submit">  
-</form>
+<div id="header">
+ <div id="content">
+    <label>Sign up here and Join me!</label>
+    </div>
+</div>
+<div id="body">
+ <div id="content">
+    <form method="post">
+    <table align="center">
+    <tr>
+   
+    </tr>
+    <tr>
+    <td><input type="text" name="first_name" placeholder="First Name" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
+    </tr>
+    <tr>
+    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    </tr>
+    <tr>
+    <td><button type="submit" name="btn-save"<strong>SAVE</strong></button></td>
+	<td align="center"><a href="index.php"> Edit data here -> </a></td>
+    </tr>
+    </table>
+    </form>
+    </div>
+</div>
 
-<?php
-echo "<h2>Your Input:</h2>";
-echo $name;
-echo "<br>";
-echo $nickname;
-echo "<br>";
-echo $email;
-echo "<br>";
-echo $home;
-echo "<br>";
-echo $comment;
-echo "<br>";
-echo $gender;
-echo $cell;
-echo "<br>";
-?>
+</center>
+</body>
 <audio controls autoplay>
 <source src="Inconsistencies.mp3" type="audio/mpeg">
 </audio>
