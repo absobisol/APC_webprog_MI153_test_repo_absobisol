@@ -76,12 +76,14 @@ color: green;
 audio{
 display: none;
 }
+table{
+align: center;
+}
 </style>
-
 <body> AMIEL POCHOLO B. SOBISOL</br>
     <img src="Cholo.jpg" width="300" height="300">
 
-<table align="center"> 
+<table> 
 <tr> 
 <th>NICKNAME:</th>
 <td>CHOLO</td> 
@@ -101,16 +103,7 @@ display: none;
 <td>MUSIC and PHOTOGRAPHY</td>
 </tr>
 </table>
-<h>TRIVIA ABOUT ME!</h>
-<h1 id="Q1">WHAT IS MY TWO FAVORITE SPORTS?</br><button type="button" onclick="document.getElementById('Q1').innerHTML = 'BASKETBALL AND BOXING'">View My Sports!</button></h1>
-<h1 id="Q2">MY BEST TRAIT?</br>
-<button type="button" onclick="document.getElementById('Q2').innerHTML = 'OPTIMIST'">I AM......</button></h1>
-<h1 id="Q3">FAVORITE FOOD</br>
-<button type="button" onclick="document.getElementById('Q3').innerHTML = 'CHICKEN'">THIS IS DELICIOUS!</button></h1>
-<h1 id="Q4">PEOPLE I HATE?</br>
-<button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">I HATE.....</button></h1>
-<h1 id="Q5">MOTTO IN LIFE?</br>
-<button type="button" onclick="document.getElementById('Q5').innerHTML = 'TRUST NO ONE BUT YOURSELF'">Click To Know!</button></h1>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
 include_once 'dbconfig.php';
@@ -162,7 +155,7 @@ if(isset($_POST['btn-save']))
     <td><input type="text" name="city_name" placeholder="City" required /></td>
     </tr>
     <tr>
-    <td><button type="submit" name="btn-save"<strong>SAVE</strong></button></td>
+    <td><button type="submit" name="btn-save">SAVE<a/></button></td>
 	<td align="center"><a href="index.php"> Edit data here -> </a></td>
     </tr>
     </table>

@@ -55,7 +55,7 @@ if(isset($_POST['btn-cancel']))
 
 <div id="header">
  <div id="content">
-    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
+    <label>Edit Data</label>
     </div>
 </div>
 
@@ -75,7 +75,7 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td>
     <button type="submit" name="btn-update"><strong>UPDATE</strong></button>
-    <button type="submit" name="btn-cancel"><strong>Cancel</strong></button>
+    <button type="submit" name="btn-cancel"><strong>CANCEL</strong></button>
     </td>
     </tr>
     </table>
