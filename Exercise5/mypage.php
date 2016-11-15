@@ -165,9 +165,6 @@ if(isset($_POST['btn-save']))
 
 </center>
 </body>
-<audio controls autoplay>
-<source src="Inconsistencies.mp3" type="audio/mpeg">
-</audio>
 </body>
 </head>
 </html>
