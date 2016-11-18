@@ -65,6 +65,9 @@ function delete_id(id)
         <tr>
         <td><?php echo $row[1]; ?></td>
         <td><?php echo $row[2]; ?></td>
+        <td><?php echo $row[3]; ?></td>
+		<td><?php echo $row[4]; ?></td>
+		<td><?php echo $row[5]; ?></td>
   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="2.jpg" height = 50px; width = 50px; align="EDIT" /></a></td>
         <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="del.jpg" height = 50px; width = 50px; align="DELETE" /></a></td>
         </tr>
