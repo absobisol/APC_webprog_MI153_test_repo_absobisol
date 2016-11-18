@@ -9,13 +9,16 @@ if(isset($_GET['edit_id']))
 if(isset($_POST['btn-update']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $full_name = $_POST['full_name'];
+ $Nick_name = $_POST['Nick_name'];
+ $Home_Add = $_POST['Home_Add'];
+ $Cell_No = $_POST['Cell_No'];
+ $Gender = $_POST['Gender'];
+ 
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET first_name='$first_name',last_name='$last_name',user_city='$city_name' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET first_name='$full_name',Nick_name='$Nick_name',Home_Add='Home_Add',Cell_No = 'Cell_No',Gender = 'Gender' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
