@@ -49,9 +49,11 @@ function delete_id(id)
     <tr>
     <th colspan="5"><a href="mypage.php"><img src="images.jpg" height = 100px; width = 100px; align="left"/></th></br>
     </tr>
-    <th>First Name</th>
-    <th>Last Name</th>
+    <th>Full Name</th>
+    <th>Nick Name</th>
     <th>City Name</th>
+	<th>Cellphone Number</th>
+	<th>Gender</th>
     <th colspan="2">Operations</th>
     </tr>
     <?php

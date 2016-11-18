@@ -67,13 +67,19 @@ if(isset($_POST['btn-cancel']))
     <form method="post">
     <table align="center">
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" value="<?php echo $fetched_row['first_name']; ?>" required /></td>
+    <td><input type="text" name="full_name" placeholder="Full Name" value="<?php echo $fetched_row['full_name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" value="<?php echo $fetched_row['last_name']; ?>" required /></td>
+    <td><input type="text" name="Nick_name" placeholder="Nick Name" value="<?php echo $fetched_row['Nick_name']; ?>" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" value="<?php echo $fetched_row['user_city']; ?>" required /></td>
+    <td><input type="text" name="Home_Add" placeholder="Home Address" value="<?php echo $fetched_row['Home_Add']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Cell_No" placeholder="Cellphone Number" value="<?php echo $fetched_row['Cell_No']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Gender" placeholder="Gender" value="<?php echo $fetched_row['Gender']; ?>" required /></td>
     </tr>
     <tr>
     <td>
