@@ -13,7 +13,7 @@ if(isset($_POST['btn-save']))
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Gender,Cell_No) VALUES('$full_name','$Nick_name','$Home_Add','Cell_No','Gender')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender')";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -52,6 +52,7 @@ if(isset($_POST['btn-save']))
     </tr>
 	<tr>
     <td><input type="text" name="Cell_No" placeholder="Cellphone Number" required /></td>
+	</tr>
 	<tr>
     <td><input type="text" name="Gender" placeholder="Gender" required /></td>
     </tr>
