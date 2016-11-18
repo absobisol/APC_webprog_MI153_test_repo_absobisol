@@ -75,12 +75,8 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td><input type="text" name="Home_Add" placeholder="Home Address" value="<?php echo $fetched_row['Home_Add']; ?>" required /></td>
     </tr>
-	<tr>
-    <td><input type="text" name="Cell_No" placeholder="Cellphone Number" value="<?php echo $fetched_row['Cell_No']; ?>" required /></td>
-    </tr>
-	<tr>
-    <td><input type="text" name="Gender" placeholder="Gender" value="<?php echo $fetched_row['Gender']; ?>" required /></td>
-    </tr>
+	
+	<
     <tr>
     <td>
     <button type="submit" name="btn-update"><strong>UPDATE</strong></button>
