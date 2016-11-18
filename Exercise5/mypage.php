@@ -110,14 +110,16 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $full_name = $_POST['full_name'];
+ $Nick_name = $_POST['Nick_name'];
+ $Home_Add = $_POST['Home_Add'];
+ $Cell_No = $_POST['Cell_No'];
+ $Gender = $_POST['Gender'];
  // variables for input data
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(first_name,last_name,user_city) VALUES('$first_name','$last_name','$city_name')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender) VALUES('$full_name','$Nick_name','$Home_Add','Cell_No','Gender')";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -127,7 +129,7 @@ if(isset($_POST['btn-save']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>MYSQL</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
