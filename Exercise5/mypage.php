@@ -22,8 +22,7 @@ th, td {
 }
 
 h1 {
-font-size: 80%;
-text-decoration: underline;
+font-size: 50%;
 text-align:left;
 
 }
@@ -103,6 +102,18 @@ align: center;
 <td>MUSIC and PHOTOGRAPHY</td>
 </tr>
 </table>
+<h1>TRIVIA ABOUT ME!</h1>
+
+<h1 id="Q1">WHAT IS MY TWO FAVORITE SPORTS?</h1>
+
+<button type="button" onclick="document.getElementById('Q1').innerHTML = 'BASKETBALL AND BOXING'">Click To Know!</button>
+<h1 id="Q2">MY BEST TRAIT?</h1>
+<button type="button" onclick="document.getElementById('Q2').innerHTML = 'OPTIMIST'">Click To Know!</button>
+<h1 id="Q3">FAVORITE FOOD</h1>
+<button type="button" onclick="document.getElementById('Q3').innerHTML = 'CHICKEN'">Click To Know!</button>
+<h1 id="Q4">PEOPLE I HATE?</h1>
+<button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">Click To Know!</button>
+
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <?php
