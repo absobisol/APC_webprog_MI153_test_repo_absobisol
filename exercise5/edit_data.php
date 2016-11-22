@@ -18,7 +18,7 @@ if(isset($_POST['btn-update']))
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET first_name='$full_name',Nick_name='$Nick_name',Home_Add='$Home_Add',Cell_No = '$Cell_No',Gender = '$Gender' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET full_name='$full_name',Nick_name='$Nick_name',Home_Add='$Home_Add',Cell_No = '$Cell_No',Gender = '$Gender' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -50,7 +50,7 @@ if(isset($_POST['btn-cancel']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>Data</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -75,8 +75,13 @@ if(isset($_POST['btn-cancel']))
     <tr>
     <td><input type="text" name="Home_Add" placeholder="Home Address" value="<?php echo $fetched_row['Home_Add']; ?>" required /></td>
     </tr>
+	<tr>
+    <td><input type="text" name="Cell_No" placeholder="Cellphone Number" value="<?php echo $fetched_row['Cell_No']; ?>" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Gender" placeholder="Gender" value="<?php echo $fetched_row['Gender']; ?>" required /></td>
+    </tr>
 	
-	<
     <tr>
     <td>
     <button type="submit" name="btn-update"><strong>UPDATE</strong></button>

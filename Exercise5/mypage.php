@@ -173,6 +173,5 @@ if(isset($_POST['btn-save']))
 
 </center>
 </body>
-</body>
 </head>
 </html>
