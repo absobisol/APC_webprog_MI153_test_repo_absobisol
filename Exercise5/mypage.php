@@ -8,13 +8,14 @@
 
 <style>
 .error {color: red;}
-body{
+header{
 text-align: center;
 color:black;
 font-family: simplifica;
     font-size: 400%;
-	background-image: url("1.jpg");
-    background-color: #cccccc;
+}
+body{
+	background-image: url("pakyu.jpg");
 }
 th, td {
     font-family: simplifica;
@@ -126,11 +127,13 @@ if(isset($_POST['btn-save']))
  $Home_Add = $_POST['Home_Add'];
  $Cell_No = $_POST['Cell_No'];
  $Gender = $_POST['Gender'];
+ $Email = $_POST['Email'];
+ $Comment = $_POST['Comment'];
  // variables for input data
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender,Email) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender','Email')";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -173,6 +176,9 @@ if(isset($_POST['btn-save']))
 	 <tr>
     <td><input type="text" name="Gender" placeholder="Gender" required /></td>
     </tr>
+	 <tr>
+    <td><input type="text" name="Email" placeholder="Email" required /></td>
+    </tr>
     <tr>
     <td><button type="submit" name="btn-save">SAVE<a/></button></td>
 	<td align="center"><a href="index.php"> Edit data here -> </a></td>
@@ -181,6 +187,7 @@ if(isset($_POST['btn-save']))
     </form>
     </div>
 </div>
+
 
 </center>
 </body>
