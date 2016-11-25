@@ -9,11 +9,12 @@ if(isset($_POST['btn-save']))
  $Home_Add = $_POST['Home_Add'];
  $Cell_No = $_POST['Cell_No'];
  $Gender = $_POST['Gender'];
+ $Email = $_POST['Email'];
  // variables for input data
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender,Email) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender','$Email)";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -55,6 +56,9 @@ if(isset($_POST['btn-save']))
 	</tr>
 	<tr>
     <td><input type="text" name="Gender" placeholder="Gender" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Email" placeholder="Email" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>

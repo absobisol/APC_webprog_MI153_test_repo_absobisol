@@ -14,11 +14,11 @@ if(isset($_POST['btn-update']))
  $Home_Add = $_POST['Home_Add'];
  $Cell_No = $_POST['Cell_No'];
  $Gender = $_POST['Gender'];
- 
+ $Email = $_POST['Email'];
  // variables for input data
 
  // sql query for update data into database
- $sql_query = "UPDATE users SET full_name='$full_name',Nick_name='$Nick_name',Home_Add='$Home_Add',Cell_No = '$Cell_No',Gender = '$Gender' WHERE user_id=".$_GET['edit_id'];
+ $sql_query = "UPDATE users SET full_name='$full_name',Nick_name='$Nick_name',Home_Add='$Home_Add',Cell_No = '$Cell_No',Gender = '$Gender',Email = '$Email' WHERE user_id=".$_GET['edit_id'];
  // sql query for update data into database
  
  // sql query execution function
@@ -81,7 +81,9 @@ if(isset($_POST['btn-cancel']))
 	<tr>
     <td><input type="text" name="Gender" placeholder="Gender" value="<?php echo $fetched_row['Gender']; ?>" required /></td>
     </tr>
-	
+	<tr>
+    <td><input type="text" name="Email" placeholder="Email" value="<?php echo $fetched_row['Email']; ?>" required /></td>
+    </tr>
     <tr>
     <td>
     <button type="submit" name="btn-update"><strong>UPDATE</strong></button>
