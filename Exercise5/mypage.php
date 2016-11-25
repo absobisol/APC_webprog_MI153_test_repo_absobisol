@@ -6,80 +6,7 @@
 </title>
 
 
-<style>
-.error {color: red;}
-header{
-text-align: center;
-color:black;
-font-family: simplifica;
-    font-size: 400%;
-}
-body{
-	background-image: url("pakyu.jpg");
-}
-th, td {
-    font-family: simplifica;
-	
-}
 
-h1 {
-font-size: 50%;
-text-align:left;
-
-}
-
-h2 {
-font-size: 80%;
-
-
-}
-
-a:link {
-    color: blue;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:hover {
-    color: red;
-    background-color: transparent;
-     text-decoration: underline;
-}
-a:active {
-    color: black;
-    background-color: transparent;
-     text-decoration: underline;
-}
-table {
-font-family: verdana;
-font-size: 50px;
-
-}
-button {
-    background-color: white;
-    color: black;
-    border-size: 43px;
-	border-color: blue;
-	font-family: simplifica;
-	font-size: 32px;
-}
-
-button:hover {
-background-color: white;
-color: green;
-
-}
-audio{
-display: none;
-}
-table{
-align: center;
-}
-</style>
 <body> AMIEL POCHOLO B. SOBISOL</br>
     <img src="Cholo.jpg" width="300" height="300">
 
@@ -133,7 +60,7 @@ if(isset($_POST['btn-save']))
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender,Email) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender','Email')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender,Email) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender','$Email')";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
