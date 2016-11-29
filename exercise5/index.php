@@ -48,7 +48,7 @@ function delete_id(id)
  <div id="content">
     <table align="center">
     <tr>
-    <th colspan="5"><a href="mypage.php"><img src="images.jpg" height = 100px; width = 100px; align="left"/></th></br>
+    <th colspan="8"><a href="mypage.php"><img src="images.jpg" height = 100px; width = 100px; align="left"/></th></br>
     </tr>
     <th>Full Name</th>
     <th>Nick Name</th>
@@ -56,6 +56,7 @@ function delete_id(id)
 	<th>Cellphone Number</th>
 	<th>Gender</th>
 	<th>Email</th>
+	<th>Comment</th>
     <th colspan="2">Operations</th>
     </tr>
     <?php
@@ -71,6 +72,7 @@ function delete_id(id)
 		<td><?php echo $row[4]; ?></td>
 		<td><?php echo $row[5]; ?></td>
 		<td><?php echo $row[6]; ?></td>
+		<td><?php echo $row[7]; ?></td>
   <td align="center"><a href="javascript:edt_id('<?php echo $row[0]; ?>')"><img src="2.jpg" height = 50px; width = 50px; align="EDIT" /></a></td>
         <td align="center"><a href="javascript:delete_id('<?php echo $row[0]; ?>')"><img src="del.jpg" height = 50px; width = 50px; align="DELETE" /></a></td>
         </tr>
