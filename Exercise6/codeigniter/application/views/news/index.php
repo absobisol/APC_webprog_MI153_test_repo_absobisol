@@ -33,6 +33,9 @@
 		p{
 			font-size: 40px;
 		}
+		td{
+			font-family: simplifica;
+		}
 	</style>
 	</head>
 
