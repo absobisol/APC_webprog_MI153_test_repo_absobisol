@@ -4,6 +4,13 @@
  
 <?php echo form_open('news/edit/'.$news_item['User_ID']); ?>
 <style>
+td{
+	color: #66a3ff;
+	font-size: 30px;
+	font-family: Simplifica;
+	font-weight: bold;
+}
+</style>
 
 	<table>
         <tr>
@@ -36,7 +43,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" name="submit" value="DONE" /></td>
+            <td><input type="submit" name="submit" value="DONE EDITING" /></td>
         </tr>
     </table>
 </form>
