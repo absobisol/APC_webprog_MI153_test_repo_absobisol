@@ -10,11 +10,11 @@
         </tr>
         <tr>
             <td><label for="Nickname">Nickname</label></td>
-            <td><textarea name="Nickname" rows="10" cols="40"></textarea></td>
+           <td><input type="Nickname" name="Home Address" placeholder="Nickname" required /></td>
         </tr>
 		<tr>
             <td><label for="Email">Email</label></td>
-            <td><textarea name="Email" rows="10" cols="40"></textarea></td>
+            <td><input type="text" name="Email" placeholder="Email" required /></td>
         </tr>
 		<tr>
             <td><label for="Home Address">Home Address</label></td>
