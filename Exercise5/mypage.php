@@ -71,7 +71,7 @@ h2{
 <body> AMIEL POCHOLO B. SOBISOL</br>
    <center><img src="Cholo.jpg" width="300" height="300"></center>
 
-<table> 
+<center><table>
 <tr> 
 <th>NICKNAME:</th>
 <td>CHOLO</td> 
@@ -90,7 +90,7 @@ h2{
 <th>INTERESTS:</th>
 <td>MUSIC and PHOTOGRAPHY</td>
 </tr>
-</table>
+</table></center>
 	<h2> Trivia! </h2>
 
 			<p>
