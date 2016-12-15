@@ -64,11 +64,6 @@
 				<td id="info">BS Information Technology, Specializing in mobile and internet technology</td>
 			</tr>
 			</table>
-
-			<button type="button" onclick="document.getElementById('table').style.fontSize='35px'">
-			Enlarge
-			</button>
-
 			<p>
 			<br>My Favorite websites:</br>
 			<a href= "https://www.facebook.com"><img border="0" alt="Facebook" src="<?php echo base_url('Images/facebook.jpg');?>" width=100 height=100></a>

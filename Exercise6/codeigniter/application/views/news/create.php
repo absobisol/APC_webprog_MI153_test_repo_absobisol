@@ -10,11 +10,9 @@
         </tr>
         <tr>
             <td><label for="Nickname">Nickname</label></td>
-<<<<<<< HEAD
+
      <td><input type="Nickname" name="Home Address" placeholder="Nickname" required /></td>
-=======
            <td><input type="Nickname" name="Home Address" placeholder="Nickname" required /></td>
->>>>>>> 4857d2922b16527ef956f7e25942d5bbf75f2610
         </tr>
 		<tr>
             <td><label for="Email">Email</label></td>
