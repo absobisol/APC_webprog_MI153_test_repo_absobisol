@@ -18,7 +18,7 @@
         </tr>
 		<tr>
             <td><label for="Home_Address">Home Address</label></td>
-            <td><textarea name="Home_Address" rows="10" cols="40"><?php echo $news_item['Home_Address'] ?></textarea></td>
+            <td><textarea name="Home_Address" rows="10" cols="40"><?php echo $news_item['Home Address'] ?></textarea></td>
         </tr>
 		<tr>
             <td><label for="Gender">Gender</label></td>
@@ -26,7 +26,7 @@
         </tr>
 		<tr>
             <td><label for="Cp_Num">Cellphone number</label></td>
-            <td><textarea name="Cp_Num" rows="10" cols="40"><?php echo $news_item['Cp_Num'] ?></textarea></td>
+            <td><textarea name="Cp_Num" rows="10" cols="40"><?php echo $news_item['Cellphone Number'] ?></textarea></td>
         </tr>
 		<tr>
             <td><label for="Comment">Comment</label></td>
@@ -34,7 +34,7 @@
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" name="submit" value="Edit news item" /></td>
+            <td><input type="submit" name="submit" value="DONE" /></td>
         </tr>
     </table>
 </form>

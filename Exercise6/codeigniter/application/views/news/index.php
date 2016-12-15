@@ -151,9 +151,9 @@
             <td><?php echo $news_item['Name']; ?></td>
 			<td><?php echo $news_item['Nickname']; ?></td>
 			<td><?php echo $news_item['Email']; ?></td>
-			<td><?php echo $news_item['Home Address']; ?></td>
+			<td><?php echo $news_item['Home_Address']; ?></td>
 			<td><?php echo $news_item['Gender']; ?></td>
-			<td><?php echo $news_item['Cellphone Number']; ?></td>
+			<td><?php echo $news_item['Cp_Num']; ?></td>
 			<td><?php echo $news_item['Comment']; ?></td>
             <td>
                 <a href="<?php echo site_url('news/'.$news_item['User_ID']); ?>">View</a> | 

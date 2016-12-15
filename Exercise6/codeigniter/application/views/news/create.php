@@ -17,16 +17,16 @@
             <td><textarea name="Email" rows="10" cols="40"></textarea></td>
         </tr>
 		<tr>
-            <td><label for="Home_Address">Home Address</label></td>
-            <td><textarea name="Home_Address" rows="10" cols="40"></textarea></td>
+            <td><label for="Home Address">Home Address</label></td>
+           <td><input type="text" name="Home Address" placeholder="Home Address" required /></td>
         </tr>
 		<tr>
             <td><label for="Gender">Gender</label></td>
             <td><textarea name="Gender" rows="10" cols="40"></textarea></td>
         </tr>
 		<tr>
-            <td><label for="Cp_Num">Cellphone number</label></td>
-            <td><textarea name="Cp_Num" rows="10" cols="40"></textarea></td>
+            <td><label for="Cellphone Number">Cellphone number</label></td>
+             <td><input type="text" name="Cellphone Number" placeholder="Cellphone Number" required /></td>
         </tr>
 		<tr>
             <td><label for="Comment">Comment</label></td>
