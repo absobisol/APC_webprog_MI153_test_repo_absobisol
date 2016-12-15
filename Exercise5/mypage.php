@@ -9,7 +9,7 @@
 .error {color: red;}
 body{
 text-align: center;
-color:black;
+color:#66a3ff;
 font-family: simplifica;
     font-size: 500%;
 	background-image: url("1.jpg");
@@ -57,6 +57,7 @@ font-size: 50px;
 p{
 	font-size: 30px;
 	font-family: simplifica;
+	Color: #66a3ff;
 }
 h2{
 	font-size: 50px;
