@@ -25,8 +25,8 @@
             <td><input type="text" name="Gender" placeholder="Gender" required /></td>
         </tr>
 		<tr>
-            <td><label for="Cellphone Number">Cellphone number</label></td>
-             <td><input type="text" name="Cellphone Number" placeholder="Cellphone Number" required /></td>
+            <td><label for="Cp_Num">Cellphone number</label></td>
+             <td><input type="text" name="Cp_Num" placeholder="Cellphone Number" required /></td>
         </tr>
 		<tr>
             <td><label for="Comment">Comment</label></td>
