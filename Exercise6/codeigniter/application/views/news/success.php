@@ -1,6 +1,6 @@
 <style>
 p{
-	font-size: 30px;
+	font-size: 20px;
 }
 </style>
 <p>Data is added successfully!</p>
