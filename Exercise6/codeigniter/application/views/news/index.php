@@ -1,57 +1,67 @@
 <html>
 
 	<head>
-		<h1><i><center><font color = #1a75ff>MY PERSONAL WEBPAGE</font></center></i></h1>
+		<h1><b><center><font color = #1a75ff>MY PERSONAL WEBPAGE</font></center></b></h1>
 	<style>
-		#PI{
+		#info{
 			border: 1px white;
 			color: #66a3ff;
 			width: 50%;
+			font-size: 40px;
 		}
 
 		body{
-			background-image: url(<?=base_url()?>Images/background.jpg);
-			color: black;
+			color: #66a3ff;
+			font-family: simplifica;
 		}
 
 		#q1, #q2, #q3, #q4, #q5{
-			color: #ff0000;
+			color: green;
 		}
 		
 		#Visitors{
-			background-color: black
+			background-color: white;
+				font-size:40px;
 		}
+		table{
+			color: black;
+			font-size:40px;
 
-		.error {color: #FF0000;}
+		.error {color: red;}
+		}
+		
+		p{
+			font-size: 40px;
+		}
 	</style>
 	</head>
 
 		<body>
 		<center>
-			<table id="PI">
+			<table id="info">
 			<tr>
-				<th id="PI">Field</th>
+				<th id="info">Field</th>
 				<th id="PI">Information</th>
 			</tr>
 			<tr>
-				<td id="PI">Name</td>
-				<td id="PI">AMIEL POCHOLO B. SOBISOL</td>
+				<td id="info">Name</td>
+				<td id="info">AMIEL POCHOLO B. SOBISOL</td>
 			</tr>
 			<tr>
-				<td id="PI">Nickname:</td>
-				<td id="PI">CHOLO OR CHO</td>
+				<td id="info">Nickname:</td>
+				<td id="info">CHOLO</td>
 			</tr>
 			<tr>
-				<td id="PI">Birthdate:</td>
-				<td id="PI">JULY 12,1998</td>
+				<td id="info">Birthdate:</td>
+				<td id="info">JULY 12, 1998</td>
 			</tr>
 			<tr>
-				<td id="PI">Age:</td>
-				<td id="PI">18</td>
+				<td id="info">Age:</td>
+				<td id="info">18</td>
 			</tr>
 			<tr>
-				<td id="PI">Course:</td>
-				<td id="PI">BS Information Technology, Specializing in mobile and internet technology</td>
+				<td id="info">Course:</td>
+				<td id="info">BS Information Technology, Specializing in mobile and internet technology</td>
 			</tr>
 			</table>
 
@@ -60,72 +70,65 @@
 			</button>
 
 			<p>
-			<br>Favorite websites as pastime:
-			<br><a href= "https://www.youtube.com"><img border="0" alt="Youtube" src="<?php echo base_url('Images/youtube.jpg');?>" width=100 height=100></a>
+			<br>My Favorite websites:</br>
 			<a href= "https://www.facebook.com"><img border="0" alt="Facebook" src="<?php echo base_url('Images/facebook.jpg');?>" width=100 height=100></a>
 			<a href= "https://www.twitter.com"><img border="0" alt="Twitter" src="<?php echo base_url('Images/twitter.jpg');?>" width=100 height=100></a>
+			<br> My Personal Image:</br>
+			<img border="0" alt="Twitter" src="<?php echo base_url('Images/Cholo.jpg');?>" width=300 height=300></a>
 			</p>
 
-			<p>
-			<br>Favorite games:
-			<br><a href= "https://lol.garena.ph/"><img border="0" alt="League of Legends" src="<?php echo base_url('Images/lol.jpg');?>" width=100 height=100></a>
-			<a href= "http://store.steampowered.com/app/316010/"><img border="0" alt="Magic:The Gathering" src="<?php echo base_url('Images/MTG.jpg');?>" 
-
-width=100 height=100></a>
-			<a href= "https://minecraft.net/en/"><img border="0" alt="Minecraft" src="<?php echo base_url('Images/minecraft.jpg');?>" width=100 height=100></a>
-			</p>
 
 			<h2> Trivia! </h2>
 
 			<p>
-				1. My most common gaming username:
+				1. My Favorite Sports:
 			</p>
 
 			<p id="q1">
 				ANSWER
 			</p>
 
-			<button type="button" onclick="document.getElementById('q1').innerHTML = 'NZAAXD or VoidDoubleA'">Click to see answer</button>
+			<button type="button" onclick="document.getElementById('q1').innerHTML = 'Basketball and Boxing'">Click to see answer</button>
 
 			<p>
-				2. My favorite subject:
+				2. My favorite Hobby: 
 			</p>
 
 			<p id="q2">
 				ANSWER
 			</p>
 
-			<button type="button" onclick="document.getElementById('q2').innerHTML = 'Anything that has Math'">Click to see answer</button>
+			<button type="button" onclick="document.getElementById('q2').innerHTML = 'Lifting weights!'">Click to see answer</button>
 
 			<p>
-				3. How long have I been playing Magic?
+				3. Favorite Food:
 			</p>
 
 			<p id="q3">
 				ANSWER
 			</p>
 
-			<button type="button" onclick="document.getElementById('q3').innerHTML = 'Started on September 2016'">Click to see answer</button>
+			<button type="button" onclick="document.getElementById('q3').innerHTML = 'Any food with chicken'">Click to see answer</button>
 
 			<p>
-				4. What else do you do in your free time?
+				4.People I hate:
 			</p>
 
 			<p id="q4">
 				ANSWER
 			</p>
 
-			<button type="button" onclick="document.getElementById('q4').innerHTML = 'Play on my PS3, or play basketball with friends.'">Click to see answer</button>
+			<button type="button" onclick="document.getElementById('q4').innerHTML = 'Negative People + People with No GOALS'">Click to see answer</button>
 
 			<p>
-				5. Where do you go to buy magic cards?
+				5. Inspired by quote: 
 			</p>
 
 			<p id="q5">
 				ANSWER
 			</p>
 
-			<button type="button" onclick="document.getElementById('q5').innerHTML = 'Hobby shops in taft or SM Megamall, or in Neutral grounds.'">Click to see answer</button>
+			<button type="button" onclick="document.getElementById('q5').innerHTML = 'Whatever you are, Be a good one. - Abraham Lincoln'">Click to see answer</button>
 
 			</center>
 
@@ -137,20 +140,20 @@ width=100 height=100></a>
         <td><strong>Name</strong></td>
         <td><strong>Nickname</strong></td>
 		<td><strong>Email</strong></td>
-        <td><strong>Home_Address</strong></td>
+        <td><strong>Home Address</strong></td>
 		<td><strong>Gender</strong></td>
-        <td><strong>Cp_Num</strong></td>
+        <td><strong>Cellphone Number</strong></td>
         <td><strong>Comment</strong></td>
-		<td><strong>Action</strong></td>
+		
     </tr>
 <?php foreach ($userinfo as $news_item): ?>
         <tr>
             <td><?php echo $news_item['Name']; ?></td>
 			<td><?php echo $news_item['Nickname']; ?></td>
 			<td><?php echo $news_item['Email']; ?></td>
-			<td><?php echo $news_item['Home_Address']; ?></td>
+			<td><?php echo $news_item['Home Address']; ?></td>
 			<td><?php echo $news_item['Gender']; ?></td>
-			<td><?php echo $news_item['Cp_Num']; ?></td>
+			<td><?php echo $news_item['Cellphone Number']; ?></td>
 			<td><?php echo $news_item['Comment']; ?></td>
             <td>
                 <a href="<?php echo site_url('news/'.$news_item['User_ID']); ?>">View</a> | 
