@@ -1,7 +1,7 @@
 <html>
 
 	<head>
-		<h1><b><center><font color = #1a75ff>MY PERSONAL WEBPAGE</font></center></b></h1>
+		<h1><b><center><font color = #1a75ff>MY WEBPAGE</font></center></b></h1>
 	<style>
 		#info{
 			border: 1px white;
