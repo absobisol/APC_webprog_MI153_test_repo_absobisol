@@ -4,14 +4,18 @@ include_once 'dbconfig.php';
 if(isset($_POST['btn-save']))
 {
  // variables for input data
- $first_name = $_POST['first_name'];
- $last_name = $_POST['last_name'];
- $city_name = $_POST['city_name'];
+ $full_name = $_POST['full_name'];
+ $Nick_name = $_POST['Nick_name'];
+ $Home_Add = $_POST['Home_Add'];
+ $Cell_No = $_POST['Cell_No'];
+ $Gender = $_POST['Gender'];
+ $Email = $_POST['Email'];
+ $Comment = $_POST['Comment'];
  // variables for input data
  
  // sql query for inserting data into database
  
-        $sql_query = "INSERT INTO users(first_name,last_name,user_city) VALUES('$first_name','$last_name','$city_name')";
+        $sql_query = "INSERT INTO users(full_name,Nick_name,Home_Add,Cell_No,Gender,Email) VALUES('$full_name','$Nick_name','$Home_Add','$Cell_No','$Gender','$Email,'$Comment')";
  mysqli_query($con,$sql_query);
         
         // sql query for inserting data into database
@@ -21,7 +25,7 @@ if(isset($_POST['btn-save']))
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CRUD Operations With PHP and MySql - By Cleartuts</title>
+<title>MYSQL</title>
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
@@ -29,7 +33,7 @@ if(isset($_POST['btn-save']))
 
 <div id="header">
  <div id="content">
-    <label>CRUD Operations With PHP and MySql - By Cleartuts</label>
+    <label>MYSQL</label>
     </div>
 </div>
 <div id="body">
@@ -40,13 +44,25 @@ if(isset($_POST['btn-save']))
     <td align="center"><a href="mypage.php">back to main page</a></td>
     </tr>
     <tr>
-    <td><input type="text" name="first_name" placeholder="First Name" required /></td>
+    <td><input type="text" name="full_name" placeholder="Full Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="last_name" placeholder="Last Name" required /></td>
+    <td><input type="text" name="Nick_name" placeholder="Nick Name" required /></td>
     </tr>
     <tr>
-    <td><input type="text" name="city_name" placeholder="City" required /></td>
+    <td><input type="text" name="Home_Add" placeholder="Home Address" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Cell_No" placeholder="Cellphone Number" required /></td>
+	</tr>
+	<tr>
+    <td><input type="text" name="Gender" placeholder="Gender" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Email" placeholder="Email" required /></td>
+    </tr>
+	<tr>
+    <td><input type="text" name="Comment" placeholder="Comment" required /></td>
     </tr>
     <tr>
     <td><button type="submit" name="btn-save"><strong>SAVE</strong></button></td>

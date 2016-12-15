@@ -230,9 +230,6 @@ echo $gender;
 echo $cell;
 echo "<br>";
 ?>
-<audio controls autoplay>
-<source src="Inconsistencies.mp3" type="audio/mpeg">
-</audio>
 </body>
 </head>
 </html>
