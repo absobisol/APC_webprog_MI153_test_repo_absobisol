@@ -9,7 +9,7 @@
 .error {color: red;}
 body{
 text-align: center;
-color:black;
+color:#66a3ff;
 font-family: simplifica;
     font-size: 500%;
 	background-image: url("1.jpg");
@@ -53,21 +53,17 @@ font-family: simplifica;
 font-size: 50px;
 
 }
-button {
-    background-color: white;
-    color: black;
-    border-size: 43px;
-	border-color: blue;
-	font-family: simplifica;
+
+p{
 	font-size: 30px;
-
+	font-family: simplifica;
+	Color: #66a3ff;
+}
+h2{
+	font-size: 50px;
+	font-family: simplifica;
 }
 
-button:hover {
-background-color: white;
-color: green;
-
-}
 
 
 
@@ -76,7 +72,7 @@ color: green;
 <body> AMIEL POCHOLO B. SOBISOL</br>
    <center><img src="Cholo.jpg" width="300" height="300"></center>
 
-<table> 
+<center><table>
 <tr> 
 <th>NICKNAME:</th>
 <td>CHOLO</td> 
@@ -95,18 +91,60 @@ color: green;
 <th>INTERESTS:</th>
 <td>MUSIC and PHOTOGRAPHY</td>
 </tr>
-</table>
-<h1>TRIVIA ABOUT ME!</h1>
+</table></center>
+	<h2> Trivia! </h2>
 
-<h1 id="Q1">WHAT IS MY TWO FAVORITE SPORTS?</h1>
+			<p>
+				1. My Favorite Sports:
+			</p>
 
-<button type="button" onclick="document.getElementById('Q1').innerHTML = 'BASKETBALL AND BOXING'">Click To Know!</button>
-<h1 id="Q2">MY BEST TRAIT?</h1>
-<button type="button" onclick="document.getElementById('Q2').innerHTML = 'OPTIMIST'">Click To Know!</button>
-<h1 id="Q3">FAVORITE FOOD</h1>
-<button type="button" onclick="document.getElementById('Q3').innerHTML = 'CHICKEN'">Click To Know!</button>
-<h1 id="Q4">PEOPLE I HATE?</h1>
-<button type="button" onclick="document.getElementById('Q4').innerHTML = 'NEGATIVE PEOPLE'">Click To Know!</button>
+			<p id="q1">
+				ANSWER
+			</p>
+
+			<button type="button" onclick="document.getElementById('q1').innerHTML = 'Basketball and Boxing'">Click to see answer</button>
+
+			<p>
+				2. My favorite Hobby: 
+			</p>
+
+			<p id="q2">
+				ANSWER
+			</p>
+
+			<button type="button" onclick="document.getElementById('q2').innerHTML = 'Lifting weights!'">Click to see answer</button>
+
+			<p>
+				3. Favorite Food:
+			</p>
+
+			<p id="q3">
+				ANSWER
+			</p>
+
+			<button type="button" onclick="document.getElementById('q3').innerHTML = 'Any food with chicken'">Click to see answer</button>
+
+			<p>
+				4.People I hate:
+			</p>
+
+			<p id="q4">
+				ANSWER
+			</p>
+
+			<button type="button" onclick="document.getElementById('q4').innerHTML = 'Negative People + People with No GOALS'">Click to see answer</button>
+
+			<p>
+				5. Inspired by quote: 
+			</p>
+
+			<p id="q5">
+				ANSWER
+			</p>
+
+			<button type="button" onclick="document.getElementById('q5').innerHTML = 'Whatever you are, Be a good one. - Abraham Lincoln'">Click to see answer</button>
+
+			</center>
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

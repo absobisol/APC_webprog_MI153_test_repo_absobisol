@@ -3,38 +3,47 @@
 <?php echo validation_errors(); ?>
  
 <?php echo form_open('news/edit/'.$news_item['User_ID']); ?>
+<style>
+td{
+	color: #66a3ff;
+	font-size: 30px;
+	font-family: Simplifica;
+	font-weight: bold;
+}
+</style>
+
 	<table>
         <tr>
             <td><label for="Name">Name</label></td>
-            <td><textarea name="Name" rows="10" cols="40"><?php echo $news_item['Name'] ?></textarea></td>
+               <td><input type="text" name="Name" placeholder="Name" required /></td>
         </tr>
         <tr>
             <td><label for="Nickname">Nickname</label></td>
-            <td><textarea name="Nickname" rows="10" cols="40"><?php echo $news_item['Nickname'] ?></textarea></td>
+            <td><input type="text" name="Nickname" placeholder="Nickname" required /></td>
         </tr>
 		<tr>
             <td><label for="Email">Email</label></td>
-            <td><textarea name="Email" rows="10" cols="40"><?php echo $news_item['Email'] ?></textarea></td>
+           <td><input type="text" name="Email" placeholder="Email" required /></td>
         </tr>
 		<tr>
             <td><label for="Home_Address">Home Address</label></td>
-            <td><textarea name="Home_Address" rows="10" cols="40"><?php echo $news_item['Home_Address'] ?></textarea></td>
+           <td><input type="text" name="Home Address" placeholder="Home Address" required /></td>
         </tr>
 		<tr>
             <td><label for="Gender">Gender</label></td>
-            <td><textarea name="Gender" rows="10" cols="40"><?php echo $news_item['Gender'] ?></textarea></td>
+             <td><input type="text" name="Gender" placeholder="Gender" required /></td>
         </tr>
 		<tr>
             <td><label for="Cp_Num">Cellphone number</label></td>
-            <td><textarea name="Cp_Num" rows="10" cols="40"><?php echo $news_item['Cp_Num'] ?></textarea></td>
+             <td><input type="text" name="Cp_Num" placeholder="Cellphone Number" required /></td>
         </tr>
 		<tr>
             <td><label for="Comment">Comment</label></td>
-            <td><textarea name="Comment" rows="10" cols="40"><?php echo $news_item['Comment'] ?></textarea></td>
+            <td><textarea name="Comment" rows="5" cols="50"></textarea></td>
         </tr>
         <tr>
             <td></td>
-            <td><input type="submit" name="submit" value="Edit news item" /></td>
+            <td><input type="submit" name="submit" value="DONE EDITING" /></td>
         </tr>
     </table>
 </form>
